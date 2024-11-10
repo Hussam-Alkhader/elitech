@@ -34,7 +34,7 @@ CSS TABLE OF CONTENTS
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --kumbh: "Kumbh Sans", sans-serif;
-  --primary-color: #3c72fc;
+  --primary-color: #001537;
   --primary10: rgba(60, 114, 252, 0.1);
   --gradient-bg: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
   --secondary-color: #0f0d1d;
@@ -53,7 +53,7 @@ CSS TABLE OF CONTENTS
 }
 
 :root[data-theme=dark] {
-  --primary-color: #3c72fc;
+  --primary-color: #001537;
   --primary10: rgba(60, 114, 252, 0.1);
   --gradient-bg: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
   --secondary-color: #0f0d1d;
@@ -68,7 +68,7 @@ CSS TABLE OF CONTENTS
 }
 
 :root[data-theme=dark] .light-area {
-  --primary-color: #3c72fc;
+  --primary-color: #001537;
   --primary10: rgba(60, 114, 252, 0.1);
   --gradient-bg: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
   --secondary-color: #0f0d1d;
@@ -170,6 +170,14 @@ a {
   display: inline-block;
   color: var(--heading-color);
   transition: var(--transition);
+}
+
+a.btn-menu {
+  color: var(--white)!important;
+}
+
+a.btn-menu:hover {
+  color: var(--white)!important;
 }
 
 a:hover {
@@ -2115,39 +2123,61 @@ input.main-search-input::placeholder {
     font-size: 14px;
   }
 }
+
 .btn-one::after {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
+  top: 50%;
+  left: 0;
+  width: 0;
   height: 0;
   content: "";
-  background-color: var(--secondary-color);
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid var(--secondary-color);
+  transform: translateY(-50%);
   z-index: -1;
   transition: var(--transition);
 }
+
 .btn-one::before {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50%;
+  top: 50%;
+  left: -60px;
+  width: 0;
   height: 0;
   content: "";
-  background-color: var(--secondary-color);
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid var(--secondary-color);
+  transform: translateY(-50%);
   z-index: -1;
   transition: var(--transition);
 }
+
+
 .btn-one:hover {
   color: var(--white);
 }
+
 .btn-one:hover::before {
-  height: 100%;
+  left: 50%;
 }
+
 .btn-one:hover::after {
-  height: 100%;
+  left: 100%;
 }
+
 .btn-one:hover i {
   transform: translate(5px);
+}
+
+.btn-one:hover i {
+  transform: translate(5px);
+}
+
+.btn-header {
+  --gradient-bg: linear-gradient(to right, #f5bc40, #FFE141) !important;
+  --secondary-color: #f5bc40 !important;
 }
 
 .read-more-btn {
@@ -2305,7 +2335,7 @@ input.main-search-input::placeholder {
 .header-top {
   padding: 16px 0;
   overflow: hidden;
-  background-color: var(--heading-color);
+  background-color: var(--white);
 }
 .header-top .header-top-wrp {
   display: flex;
@@ -2320,7 +2350,7 @@ input.main-search-input::placeholder {
 }
 .header-top .header-top-wrp .info a {
   transition: var(--transition);
-  color: var(--white);
+  color: var(--primary-color);
   font-size: 15px;
 }
 .header-top .header-top-wrp .info a:hover {
@@ -2344,7 +2374,7 @@ input.main-search-input::placeholder {
 }
 .header-top .header-top-wrp .link-info li a {
   width: 37px;
-  color: var(--white);
+  color: var(--primary-color);
   text-align: center;
 }
 .header-top .header-top-wrp .link-info li a:hover {
@@ -2358,14 +2388,14 @@ input.main-search-input::placeholder {
   position: absolute;
   top: 0;
   left: 0;
-  width: 30%;
-  background: linear-gradient(270deg, #3c72fc 6.32%, #00060c 216.42%);
+  width: 100%;
+  background: #001537;
   height: 100%;
   content: "";
   z-index: -1;
-  clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+  /* clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%); */
 }
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
   .header-area::after {
     width: 25%;
   }
@@ -2389,7 +2419,7 @@ input.main-search-input::placeholder {
   .header-area::after {
     width: 70%;
   }
-}
+} */
 .header-area.menu-fixed {
   position: fixed;
   width: 100%;
