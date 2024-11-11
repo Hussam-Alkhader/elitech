@@ -386,14 +386,36 @@ CSS TABLE OF CONTENTS
 	);
 	// Hover add & remove js area end here ***
 
-	// Background image date area start here ***
-	$("[data-background").each(function () {
-		$(this).css(
-			"background-image",
-			"url( " + $(this).attr("data-background") + "  )"
-		);
-	});
-	// Background image date area end here ***
+// Background image date area start here ***
+$("[data-background]").each(function () {
+    // التحقق من حجم الشاشة وتغيير الصورة بناءً عليه
+    let imageUrl = $(this).attr("data-background");
+    if (window.innerWidth <= 768) {
+        // تعديل الرابط للصورة الخاصة بالموبايل
+        imageUrl = imageUrl.replace('.jpg', '-mobile.jpg');
+    }
+    // تعيين الصورة الخلفية للعنصر
+    $(this).css("background-image", "url(" + imageUrl + ")");
+});
+// Background image date area end here ***
+
+// استماع لحدث تغيير حجم الشاشة
+window.addEventListener('resize', function() {
+    // الحصول على جميع العناصر التي تحتوي على data-background
+    $("[data-background]").each(function () {
+        let imageUrl = $(this).attr("data-background");
+        if (window.innerWidth <= 768) {
+            // تعديل الرابط للصورة الخاصة بالموبايل
+            imageUrl = imageUrl.replace('.jpg', '-mobile.jpg');
+        } else {
+            // العودة للصورة الأصلية
+            imageUrl = imageUrl.replace('-mobile.jpg', '.jpg');
+        }
+        // تعيين الصورة الخلفية للعنصر
+        $(this).css("background-image", "url(" + imageUrl + ")");
+    });
+});
+
 
 	// Video popup area start here ***
 	$(".video-popup").magnificPopup({
