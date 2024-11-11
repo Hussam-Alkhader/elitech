@@ -948,7 +948,7 @@ button {
 }
 
 .pt-120 {
-  padding-top: 120px;
+  padding-top: 100px;
 }
 
 .pt-125 {
@@ -1497,7 +1497,7 @@ button {
 
 @media (max-width: 767px) {
   .pt-120 {
-    padding-top: 60px;
+    padding-top: 50px;
   }
   .pb-120 {
     padding-bottom: 60px;
