@@ -385,6 +385,8 @@ button {
 
 .mb-15 {
   margin-bottom: 15px;
+  text-indent: -31px;
+  padding-left: 31px;
 }
 
 .mb-20 {
@@ -5095,9 +5097,9 @@ input.main-search-input::placeholder {
   transform: translate(-50%);
   animation: footer__shadow 10s linear infinite alternate;
 }
-.footer__item .logo {
+/* .footer__item .logo {
   margin-top: -30px;
-}
+} */
 @media (max-width: 575px) {
   .footer__item .logo {
     margin-top: 0;
