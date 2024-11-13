@@ -34,10 +34,10 @@ CSS TABLE OF CONTENTS
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --kumbh: "Kumbh Sans", sans-serif;
-  --primary-color: #001537;
+  --primary-color: #11326B;
   --primary10: rgba(60, 114, 252, 0.1);
   --gradient-bg: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
-  --secondary-color: #0f0d1d;
+  --secondary-color: #001537;
   --main-bg: #ffffff;
   --sub-bg: #f3f7fb;
   --heading-color: #0f0d1d;
@@ -53,7 +53,7 @@ CSS TABLE OF CONTENTS
 }
 
 :root[data-theme=dark] {
-  --primary-color: #001537;
+  --primary-color: #11326B;
   --primary10: rgba(60, 114, 252, 0.1);
   --gradient-bg: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
   --secondary-color: #0f0d1d;
@@ -68,7 +68,7 @@ CSS TABLE OF CONTENTS
 }
 
 :root[data-theme=dark] .light-area {
-  --primary-color: #001537;
+  --primary-color: #11326B;
   --primary10: rgba(60, 114, 252, 0.1);
   --gradient-bg: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
   --secondary-color: #0f0d1d;
@@ -384,9 +384,21 @@ button {
 }
 
 .mb-15 {
-  margin-bottom: 15px;
-  text-indent: -31px;
-  padding-left: 31px;
+  margin-bottom: 8px;
+  text-indent: -26px;
+  padding-left: 26px;
+}
+.mb-15 a {
+  text-indent: -26px;
+  padding-left: 26px;
+}
+
+li a, p a {
+  color: #007bff;
+}
+
+li a:hover, p a:hover {
+  color: #0056b3;
 }
 
 .mb-20 {
@@ -2376,7 +2388,7 @@ input.main-search-input::placeholder {
   top: 0;
   left: 0;
   width: 100%;
-  background: #001537;
+  background: #11326B;
   height: 100%;
   content: "";
   z-index: -1;
@@ -3448,8 +3460,8 @@ input.main-search-input::placeholder {
   color: var(--heading-color);
 }
 .service-single__left-item ul li i {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   line-height: 20px;
   text-align: center;
   border-radius: 50%;
@@ -5041,7 +5053,6 @@ input.main-search-input::placeholder {
   position: relative;
 }
 .footer__wrp {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

@@ -12,7 +12,7 @@ CSS TABLE OF CONTENTS
 -------------------------------------------------------------------
 
 01. preloader
-02. header
+// 02. header
 03. swiper slider
 04. animated text with swiper slider
 05. shop products count
@@ -77,20 +77,6 @@ CSS TABLE OF CONTENTS
 		mousecursor();
 	});
 	// Mouse cursor area end here ***
-
-	// Header area start here ***
-	// Mobile menu
-	$(".header-area nav").meanmenu();
-	// Menu Fixed
-	var fixed_top = $(".header-area");
-	$(window).on("scroll", function () {
-		if ($(this).scrollTop() > 300) {
-			fixed_top.addClass("menu-fixed animated fadeInDown");
-		} else {
-			fixed_top.removeClass("menu-fixed fadeInDown");
-		}
-	});
-	// Header area end here ***
 
 	// Menu active one page js area start here ***
 	$(window).scroll(function () {
