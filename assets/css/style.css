@@ -31,12 +31,40 @@ CSS TABLE OF CONTENTS
     4.04 --> footer
 
 ------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: 'Graphik';
+  src: url('/assets/webfonts/Graphik/GraphikBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/assets/webfonts/Graphik/GraphikMedium.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/assets/webfonts/Graphik/GraphikRegular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('/assets/webfonts/Graphik/GraphikSemibold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 :root {
-  --kumbh: "Kumbh Sans", sans-serif;
+  --kumbh: "Graphik";
   --primary-color: #11326B;
+  --heading2-color: #014E84;
   --primary10: rgba(60, 114, 252, 0.1);
-  --gradient-bg: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
+  --gradient-bg: #6DC8E6;
   --secondary-color: #001537;
   --main-bg: #ffffff;
   --sub-bg: #f3f7fb;
@@ -54,6 +82,7 @@ CSS TABLE OF CONTENTS
 
 :root[data-theme=dark] {
   --primary-color: #11326B;
+  --heading2-color: #014E84;
   --primary10: rgba(60, 114, 252, 0.1);
   --gradient-bg: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
   --secondary-color: #0f0d1d;
@@ -69,6 +98,7 @@ CSS TABLE OF CONTENTS
 
 :root[data-theme=dark] .light-area {
   --primary-color: #11326B;
+  --heading2-color: #014E84;
   --primary10: rgba(60, 114, 252, 0.1);
   --gradient-bg: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
   --secondary-color: #0f0d1d;
@@ -98,10 +128,10 @@ body {
   background-color: var(--main-bg);
   line-height: 28px;
   font-weight: 400;
+  width: 100% !important;
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -119,10 +149,31 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48px;
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 80px;
+  color: var(--heading2-color);
+  font-family: var(--kumbh);
+  margin-bottom: 10px;
 }
+
+.gradient-line {
+  width: 400px;
+  height: 8px;
+  background: linear-gradient(to right, #FFD523, #ffffff);
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: top; /* محاذاة الأيقونة والنص عموديًا */
+  gap: 10px; /* المسافة بين الأيقونة والنص */
+}
+.title i {
+  font-size: 6rem; /* تغيير حجم الأيقونة لتتناسب مع النص */
+}
+
 @media (max-width: 767px) {
   h2 {
     font-size: 30px;
@@ -403,6 +454,11 @@ li a:hover, p a:hover {
 
 .mb-20 {
   margin-bottom: 20px;
+}
+.mbt-130 {
+  margin-bottom: 130px;
+  width: 50%;
+  text-align: left;
 }
 
 .mb-25 {
@@ -2111,9 +2167,9 @@ input.main-search-input::placeholder {
 }
 
 .btn-one {
-  padding: 15px 25px;
+  padding: 10px 15px;
   background: var(--gradient-bg);
-  font-weight: 600;
+  font-weight: 400;
   color: var(--white);
   transition: var(--transition);
   text-transform: capitalize;
@@ -2325,7 +2381,7 @@ input.main-search-input::placeholder {
 
 .logo {
   display: block;
-  width: 196px;
+  width: 140px;
 }
 .logo img {
   width: 100%;
@@ -2387,6 +2443,7 @@ input.main-search-input::placeholder {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   background: #11326B;
   height: 100%;
@@ -2457,8 +2514,8 @@ input.main-search-input::placeholder {
   transform: translateX(-50%) translateY(0px);
 }
 .header__main .main-menu ul li a {
-  font-weight: 600;
-  padding: 40px 0;
+  font-weight: 400;
+  padding: 25px 0;
 }
 .header__main .main-menu ul li a i {
   font-size: 12px;
@@ -2903,6 +2960,9 @@ input.main-search-input::placeholder {
     line-height: 50px;
   }
 }
+br {
+  display: block !important;
+}
 .banner__content p, .banner-two__content p, .banner-three__content p {
   color: var(--white);
   opacity: 90%;
@@ -3293,29 +3353,38 @@ input.main-search-input::placeholder {
   bottom: 0;
 }
 .service-two__content {
+  width: 350px;
   position: relative;
   padding: 30px;
   padding-top: 0;
 }
 .service-two__content .icon {
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
+  width: 55px;
+  height: 55px;
+  padding: 6px;
   text-align: center;
   border-radius: 50%;
   transition: var(--transition);
   border-radius: 0;
   background: var(--gradient-bg);
-  margin-bottom: 30px;
-  margin-top: -35px;
-  transition: 1s;
+  margin-bottom: 12px;
+  margin-top: 20px;
+  /* transition: 1s; */
+}
+
+.service-two__content .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 .service-two__content .shape {
   position: absolute;
-  top: 35px;
-  right: 0;
-  opacity: 0.3;
+  top: -20px;
+  right: 0px;
   transition: var(--transition);
+  width: 70%;
+  height: 70%;
 }
 .service-two__content p {
   margin-top: 10px;
@@ -3324,13 +3393,12 @@ input.main-search-input::placeholder {
 .service-two__item {
   box-shadow: var(--shadow);
   background-color: var(--main-bg);
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
   overflow: hidden;
+  height: 300px;
 }
-.service-two__item:hover .icon {
+/* .service-two__item:hover .icon {
   transform: rotateX(-360deg);
-}
+} */
 .service-two__item:hover .shape {
   opacity: 0.5;
 }
@@ -3341,8 +3409,24 @@ input.main-search-input::placeholder {
   color: var(--primary-color);
   margin-left: 10px;
 }
-.service-two__slider .swiper-slide-active .icon {
+/* .service-two__slider .swiper-slide-active .icon {
   transform: rotateX(-360deg);
+} */
+
+.heading {
+  position: absolute;
+  top: 265px;
+  right: 440px;
+  width: 500px;
+  height: auto;
+}
+.heading2 {
+  position: absolute;
+  top: 0px;
+  right: -100px;
+  width: 900px;
+  height: auto;
+  z-index: -70;
 }
 .service-two__slider .swiper-slide-active .shape {
   opacity: 0.5;
@@ -4123,7 +4207,7 @@ input.main-search-input::placeholder {
 }
 .offer__item:hover .offer__icon {
   background: var(--gradient-bg);
-  transform: rotateY(360deg);
+  /* transform: rotateY(360deg); */
 }
 .offer__item:hover .offer__icon svg path {
   fill: #fff;
@@ -4886,9 +4970,9 @@ input.main-search-input::placeholder {
 .pricing__item:hover .item-shape {
   animation: bobble 2s ease-in-out infinite alternate;
 }
-.pricing__item:hover .pricing-icon img {
+/* .pricing__item:hover .pricing-icon img {
   transform: rotateY(-360deg);
-}
+} */
 
 .project-three-area {
   padding-bottom: 240px;
@@ -5254,7 +5338,7 @@ input.main-search-input::placeholder {
   animation: sway_YY 3s linear infinite alternate;
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
@@ -5273,7 +5357,7 @@ input.main-search-input::placeholder {
   100% {
     transform: rotate(-360deg);
   }
-}
+} */
 .animation__rotateY {
   animation: rotateY 40s linear infinite;
 }
