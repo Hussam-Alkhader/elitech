@@ -180,6 +180,76 @@ CSS TABLE OF CONTENTS
 	animated_swiper(sliderActive1, sliderInit1);
 	// Banner Two slider area end here ***
 
+
+
+
+
+	    /*Portfolio Filter*/
+	// 	$(window).load( function () {
+	// 		if( $('#projects_grid').length > 0 ){
+	// 			var $container = $('#projects_grid'); 
+	// 			$container.isotope({ 
+	// 				itemSelector : '.project-item', 
+	// 				layoutMode : 'masonry'
+	// 			});
+	
+	// 			var $optionSets = $('.project_filters'),
+	// 				$optionLinks = $optionSets.find('a');
+	
+	// 			$optionLinks.click(function(){
+	// 				var $this = $(this);
+	
+	// 				if ( $this.hasClass('selected') ) {
+	// 					return false;
+	// 				}
+	// 				var $optionSet = $this.parents('.project_filters');
+	// 					$optionSets.find('.selected').removeClass('selected');
+	// 					$this.addClass('selected');
+	
+	// 				var selector = $(this).attr('data-filter');
+	// 					$container.isotope({ 
+	// 						filter: selector 
+	// 					});
+	// 				return false;
+	// 			});
+	// 		};    
+	// 	});
+
+	// 	    $(window).load(function(){
+    // $('.projects-grid').each( function(){
+    //     var $container = $(this); 
+    //     $container.isotope({ 
+    //         itemSelector : '.project-item', 
+    //         animationEngine : 'css',
+    //     });
+
+    //     var $optionSets = $('.project_filters'),
+    //         $optionLinks = $optionSets.find('a');
+
+    //     $optionLinks.on('click', function(){
+    //         var $this = $(this);
+
+    //         if ( $this.hasClass('selected') ) {
+    //             return false;
+    //         }
+    //         var $optionSet = $this.parents('.project_filters');
+    //             $optionSets.find('.selected').removeClass('selected');
+    //             $this.addClass('selected');
+
+    //         var selector = $(this).attr('data-filter');
+    //             $container.isotope({ 
+    //                 filter: selector 
+    //             });
+    //         return false;
+    //     });
+    // });
+    // });
+			    /*Portfolio Filter*/
+
+
+
+				
+
 	// Case slider area start here ***
 	var swiper = new Swiper(".case__slider", {
 		loop: "true",
