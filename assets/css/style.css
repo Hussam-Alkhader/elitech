@@ -33,21 +33,24 @@ CSS TABLE OF CONTENTS
 ------------------------------------------------------------------*/
 @font-face {
   font-family: 'Graphik';
-  src: url('/assets/webfonts/Graphik/GraphikBold.woff2') format('woff2');
+  src: url('/assets/webfonts/Graphik/GraphikBold.woff2') format('woff2'),
+  url('/assets/webfonts/Graphik/GraphikBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Graphik';
-  src: url('/assets/webfonts/Graphik/GraphikMedium.woff2') format('woff2');
+  src: url('/assets/webfonts/Graphik/GraphikMedium.woff2') format('woff2'),
+  url('/assets/webfonts/Graphik/GraphikMedium.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Graphik';
-  src: url('/assets/webfonts/Graphik/GraphikRegular.woff2') format('woff2');
+  src: url('/assets/webfonts/Graphik/GraphikRegular.woff2') format('woff2'),
+  url('/assets/webfonts/Graphik/GraphikRegular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
