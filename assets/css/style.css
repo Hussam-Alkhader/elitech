@@ -6393,7 +6393,7 @@ br {
 }
 
 @media (max-width: 767px) {
-  .footer__shape-regular-right {
+  .footer__shape-solid-left {
     display: none;
   }
 }
