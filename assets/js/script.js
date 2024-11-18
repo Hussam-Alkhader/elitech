@@ -182,34 +182,83 @@ CSS TABLE OF CONTENTS
 
 	/*Portfolio Filter*/
 	$(document).ready(function () {
+		let currentFilter = '*'; // حفظ الفلتر الحالي
+		let maxVisibleItems = Number.POSITIVE_INFINITY; // تعريف المتغير هنا بقيمة افتراضية (جميع العناصر)
+	
 		$('.projects-grid').each(function () {
 			var $container = $(this);
+	
+			// الحصول على العدد من data-max-items أو استخدام قيمة افتراضية
+			maxVisibleItems = $(this).data('max-items') || Number.POSITIVE_INFINITY;
+	
 			$container.isotope({
 				itemSelector: '.project-item',
 				animationEngine: 'css',
 			});
-
+	
 			var $optionSets = $('.project_filters'),
 				$optionLinks = $optionSets.find('a');
-
+	
 			$optionLinks.on('click', function () {
 				var $this = $(this);
-
+	
 				if ($this.hasClass('selected')) {
 					return false;
 				}
 				var $optionSet = $this.parents('.project_filters');
 				$optionSets.find('.selected').removeClass('selected');
 				$this.addClass('selected');
-
+	
 				var selector = $(this).attr('data-filter');
+				currentFilter = selector; // تحديث الفلتر الحالي
 				$container.isotope({
 					filter: selector
 				});
+	
+				// تقييد عدد العناصر الظاهرة
+				limitVisibleItems(selector, $container);
+	
 				return false;
 			});
+	
+			// عند تحميل الصفحة أو العودة إلى التبويب
+			limitVisibleItems(currentFilter, $container);
 		});
+	
+		// دالة لتقييد العناصر المعروضة إلى العدد المحدد
+		function limitVisibleItems(selector, $container) {
+			var visibleCount = 0;
+	
+			$('.project-item').each(function () {
+				var $item = $(this);
+	
+				// إذا كان العنصر يطابق الفلتر الحالي
+				if (selector === '*' || $item.is(selector)) {
+					if (visibleCount < maxVisibleItems) {
+						$item.show(); // عرض العناصر الأولى فقط
+						visibleCount++;
+					} else {
+						$item.hide(); // إخفاء العناصر الزائدة
+					}
+				} else {
+					$item.hide(); // إخفاء العناصر غير المطابقة
+				}
+			});
+	
+			// إعادة ترتيب العناصر بعد التغييرات
+			$container.isotope('layout');
+		}
+	
+		// تغيير العدد المعروض عند الحاجة (يمكنك استدعاء هذه الدالة حسب الرغبة)
+		function setMaxVisibleItems(newMax) {
+			maxVisibleItems = newMax;
+			limitVisibleItems(currentFilter, $('.projects-grid'));
+		}
+	
+		// مثال لاستخدام هذه الوظيفة:
+		// setMaxVisibleItems(10); // لتغيير العدد إلى 10
 	});
+	
 	/*Portfolio Filter*/
 
 

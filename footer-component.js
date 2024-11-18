@@ -24,9 +24,7 @@ class FooterComponent extends HTMLElement {
                     <a href="index.html" class="logo mb-30">
                         <img src="assets/images/logo/logo.svg" alt="image">
                     </a>
-                    <p>Phasellus ultricies aliquam volutpat
-                        ullamcorper laoreet neque, a lacinia
-                        curabitur lacinia mollis</p>
+                    <p>At Elitech, we are passionate about transforming education through innovative technology</p>
                     <div class="social-icon">
                         <a href="https://www.facebook.com/elitechco" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/elitechco?igsh=NjYwenowemU5ZzFn" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -34,39 +32,36 @@ class FooterComponent extends HTMLElement {
                     </div>
                 </div>
                 <div class="footer__item item-sm wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <h3 class="footer-title">IT Solution</h3>
+                    <h3 class="footer-title">Services</h3>
                     <ul>
-                        <li><a href="service-details.html"><i class="fa-regular fa-angles-right me-1"></i> IT
-                                Management</a></li>
-                        <li><a href="service-details.html"><i class="fa-regular fa-angles-right me-1"></i> SEO
-                                Optimization</a>
+                        <li><a href="e-learning-solutions.html"><i class="fa-regular fa-angles-right me-1"></i> E-learning </a></li>
+                        <li><a href="creative-studio.html"><i class="fa-regular fa-angles-right me-1"></i> Creative Studio</a>
                         </li>
-                        <li><a href="service-details.html"><i class="fa-regular fa-angles-right me-1"></i> Web
-                                Development</a>
+                        <li><a href="content-solutions.html"><i class="fa-regular fa-angles-right me-1"></i> Content Solutions </a>
                         </li>
-                        <li><a href="service-details.html"><i class="fa-regular fa-angles-right me-1"></i> Cyber
-                                Security</a></li>
-                        <li><a href="service-details.html"><i class="fa-regular fa-angles-right me-1"></i> Data
-                                Security</a></li>
+                        <!-- <li><a href="service-details.html"><i class="fa-regular fa-angles-right me-1"></i> Cyber
+                                Security</a></li> -->
+                        <!-- <li><a href="service-details.html"><i class="fa-regular fa-angles-right me-1"></i> Data
+                                Security</a></li> -->
                     </ul>
                 </div>
                 <div class="footer__item item-sm wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
                     <h3 class="footer-title">Quick Link</h3>
                     <ul>
-                        <li><a href="about.html"><i class="fa-regular fa-angles-right me-1"></i> About Gratech</a></li>
+                        <li><a href="about.html"><i class="fa-regular fa-angles-right me-1"></i> About Elitech</a></li>
                         <li><a href="service.html"><i class="fa-regular fa-angles-right me-1"></i> Our Services</a>
                         </li>
-                        <li><a href="pricing.html"><i class="fa-regular fa-angles-right me-1"></i> Pricing Plan</a>
-                        </li>
-                        <li><a href="case.html"><i class="fa-regular fa-angles-right me-1"></i> Our Projects</a></li>
-                        <li><a href="team.html"><i class="fa-regular fa-angles-right me-1"></i> Our Team</a></li>
+                        <!-- <li><a href="pricing.html"><i class="fa-regular fa-angles-right me-1"></i> Pricing Plan</a>
+                        </li> -->
+                        <li><a href="our-projects.html"><i class="fa-regular fa-angles-right me-1"></i> Our Projects</a></li>
+                        <!-- <li><a href="team.html"><i class="fa-regular fa-angles-right me-1"></i> Our Team</a></li> -->
                     </ul>
                 </div>
                 <div class="footer__item item-big wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
                     <h3 class="footer-title">Contact Us</h3>
-                    <p class="mb-20">4517 Washington Ave. Manchester, Kentucky 39495</p>
+                    <!-- <p class="mb-20">4517 Washington Ave. Manchester, Kentucky 39495</p> -->
                     <ul class="footer-contact">
-                        <li>
+                        <!-- <li>
                             <i class="fa-regular fa-clock"></i>
                             <div class="info">
                                 <h5>
@@ -74,14 +69,14 @@ class FooterComponent extends HTMLElement {
                                 </h5>
                                 <p>Mon - Sat: 10.00 AM - 4.00 PM</p>
                             </div>
-                        </li>
+                        </li> -->
                         <li>
                             <i class="fa-duotone fa-phone"></i>
                             <div class="info">
                                 <h5>
                                     Phone Call:
                                 </h5>
-                                <p>208-6666-0112, 308-5555-0113</p>
+                                <p>+962-79-2605-553</p>
                             </div>
                         </li>
                     </ul>

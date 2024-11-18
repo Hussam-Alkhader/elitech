@@ -108,8 +108,8 @@ class MenuComponent extends HTMLElement {
                                 </ul> -->
                             </li>
                             <li>
-                                <a href="#0" class="btn-menu">Pages</a>
-                                <ul class="sub-menu">
+                                <a href="our-projects.html" class="btn-menu">Our projects</a>
+                                <!-- <ul class="sub-menu">
                                     <li>
                                         <a href="case.html">Case Study 01</a>
                                     </li>
@@ -117,7 +117,7 @@ class MenuComponent extends HTMLElement {
                                         <a href="case-2.html">Case Study 02</a>
                                     </li>
                                     <li>
-                                        <a href="case-details.html">Case Study Details</a>
+                                        <a href="etiquette-project.html">Case Study Details</a>
                                     </li>
                                     <li>
                                         <a href="team.html">Our Team</a>
@@ -134,9 +134,9 @@ class MenuComponent extends HTMLElement {
                                     <li>
                                         <a href="error.html">404 Error</a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </li>
-                            <li>
+                           <!--  <li>
                                 <a href="#0" class="btn-menu">Blog</a>
                                 <ul class="sub-menu">
                                     <li>
@@ -149,7 +149,7 @@ class MenuComponent extends HTMLElement {
                                         <a href="blog-details.html">Blog Details</a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li><a href="contact.html" class="btn-menu">Contact</a></li>
                             <!-- <li class="ml-20 d-none d-lg-block"><a class="search-trigger" href="#0"><svg width="17"
                                         height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -169,7 +169,7 @@ class MenuComponent extends HTMLElement {
                     </nav>
                 </div>
                 <div class="d-none d-lg-inline-block">
-                    <a href="contact.html" class="btn-one btn-header">Get A Quote <i
+                    <a href="contact.html" class="btn-one btn-home-orange">Get A Quote <i
                             class="fa-regular fa-arrow-right-long"></i></a>
                 </div>
                 <div class="bars d-block d-lg-none">

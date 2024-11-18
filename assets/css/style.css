@@ -67,6 +67,7 @@ CSS TABLE OF CONTENTS
   --heading2-color: #014E84;
   --primary10: rgba(60, 114, 252, 0.1);
   --gradient-bg: #6DC8E6;
+  --gradient-bg-team: linear-gradient(90deg, #6DC8E6 -10.59%, #00060c 300.59%);
   --secondary-color: #001537;
   --main-bg: #ffffff;
   --sub-bg: #f3f7fb;
@@ -197,6 +198,9 @@ h2 {
   margin-bottom: 30px;
   padding-left: 0;
 }
+.ot-button {
+  margin-top: 30px;
+}
 
 .project_filters:after {
   content: "";
@@ -311,6 +315,7 @@ h2 {
 .projects-style-1 .projects-box .portfolio-info {
   width: 100%;
   height: 100%;
+  pointer-events: none;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2763,14 +2768,18 @@ input.main-search-input::placeholder {
   transform: translate(5px);
 }
 
-.btn-header {
-  --gradient-bg: linear-gradient(to right, #f5bc40, #FFE141) !important;
-  --secondary-color: #f5bc40 !important;
-}
-
 .btn-home-orange {
   --gradient-bg: linear-gradient(to right, #f5bc40, #FFE141) !important;
   --secondary-color: #f5bc40 !important;
+}
+.btn-home-purple {
+  --gradient-bg: linear-gradient(to right, #7268be, #8A7DEA) !important;
+  --secondary-color: #7e72d3 !important;
+}
+
+.btn-home-blue {
+  --gradient-bg: linear-gradient(to right, #51adcb, #6DC8E6) !important;
+  --secondary-color: #51adcb !important;
 }
 
 .read-more-btn {
@@ -4993,7 +5002,7 @@ br {
 
 .case-single__item .case-date li span {
   font-weight: 400;
-  color: var(--primary-color);
+  color: red;
 }
 
 .case-single__item .case-challenge-list {
@@ -5903,8 +5912,8 @@ br {
   text-align: center;
   border-radius: 50%;
   transition: var(--transition);
-  background: var(--gradient-bg);
-  color: var(--white);
+  background: var(--gradient-bg-team);
+  color: var(--white) !important;
   font-size: 18px;
 }
 
@@ -5936,7 +5945,7 @@ br {
   position: absolute;
   max-width: 270px;
   padding: 20px 30px;
-  background: var(--gradient-bg);
+  background: var(--gradient-bg-team);
   bottom: 0;
   left: 0;
   width: 100%;
@@ -6334,7 +6343,7 @@ br {
 .footer__wrp {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: top;
   justify-content: space-between;
   gap: 30px;
 }
@@ -6395,6 +6404,7 @@ br {
   bottom: 0;
   transform: translate(-50%);
   animation: footer__shadow 10s linear infinite alternate;
+  pointer-events: none;
 }
 
 /* .footer__item .logo {
