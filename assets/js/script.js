@@ -67,7 +67,7 @@ CSS TABLE OF CONTENTS
 				$("body").on("mouseleave", "a, .cursor-pointer", function () {
 					($(this).is("a") && $(this).closest(".cursor-pointer").length) ||
 						(e.classList.remove("cursor-hover"),
-						t.classList.remove("cursor-hover"));
+							t.classList.remove("cursor-hover"));
 				}),
 				(e.style.visibility = "visible"),
 				(t.style.visibility = "visible");
@@ -180,75 +180,41 @@ CSS TABLE OF CONTENTS
 	animated_swiper(sliderActive1, sliderInit1);
 	// Banner Two slider area end here ***
 
+	/*Portfolio Filter*/
+	$(document).ready(function () {
+		$('.projects-grid').each(function () {
+			var $container = $(this);
+			$container.isotope({
+				itemSelector: '.project-item',
+				animationEngine: 'css',
+			});
+
+			var $optionSets = $('.project_filters'),
+				$optionLinks = $optionSets.find('a');
+
+			$optionLinks.on('click', function () {
+				var $this = $(this);
+
+				if ($this.hasClass('selected')) {
+					return false;
+				}
+				var $optionSet = $this.parents('.project_filters');
+				$optionSets.find('.selected').removeClass('selected');
+				$this.addClass('selected');
+
+				var selector = $(this).attr('data-filter');
+				$container.isotope({
+					filter: selector
+				});
+				return false;
+			});
+		});
+	});
+	/*Portfolio Filter*/
 
 
 
 
-	    /*Portfolio Filter*/
-	// 	$(window).load( function () {
-	// 		if( $('#projects_grid').length > 0 ){
-	// 			var $container = $('#projects_grid'); 
-	// 			$container.isotope({ 
-	// 				itemSelector : '.project-item', 
-	// 				layoutMode : 'masonry'
-	// 			});
-	
-	// 			var $optionSets = $('.project_filters'),
-	// 				$optionLinks = $optionSets.find('a');
-	
-	// 			$optionLinks.click(function(){
-	// 				var $this = $(this);
-	
-	// 				if ( $this.hasClass('selected') ) {
-	// 					return false;
-	// 				}
-	// 				var $optionSet = $this.parents('.project_filters');
-	// 					$optionSets.find('.selected').removeClass('selected');
-	// 					$this.addClass('selected');
-	
-	// 				var selector = $(this).attr('data-filter');
-	// 					$container.isotope({ 
-	// 						filter: selector 
-	// 					});
-	// 				return false;
-	// 			});
-	// 		};    
-	// 	});
-
-	// 	    $(window).load(function(){
-    // $('.projects-grid').each( function(){
-    //     var $container = $(this); 
-    //     $container.isotope({ 
-    //         itemSelector : '.project-item', 
-    //         animationEngine : 'css',
-    //     });
-
-    //     var $optionSets = $('.project_filters'),
-    //         $optionLinks = $optionSets.find('a');
-
-    //     $optionLinks.on('click', function(){
-    //         var $this = $(this);
-
-    //         if ( $this.hasClass('selected') ) {
-    //             return false;
-    //         }
-    //         var $optionSet = $this.parents('.project_filters');
-    //             $optionSets.find('.selected').removeClass('selected');
-    //             $this.addClass('selected');
-
-    //         var selector = $(this).attr('data-filter');
-    //             $container.isotope({ 
-    //                 filter: selector 
-    //             });
-    //         return false;
-    //     });
-    // });
-    // });
-			    /*Portfolio Filter*/
-
-
-
-				
 
 	// Case slider area start here ***
 	var swiper = new Swiper(".case__slider", {
@@ -442,35 +408,35 @@ CSS TABLE OF CONTENTS
 	);
 	// Hover add & remove js area end here ***
 
-// Background image date area start here ***
-$("[data-background]").each(function () {
-    // التحقق من حجم الشاشة وتغيير الصورة بناءً عليه
-    let imageUrl = $(this).attr("data-background");
-    if (window.innerWidth <= 768) {
-        // تعديل الرابط للصورة الخاصة بالموبايل
-        imageUrl = imageUrl.replace('.jpg', '-mobile.jpg');
-    }
-    // تعيين الصورة الخلفية للعنصر
-    $(this).css("background-image", "url(" + imageUrl + ")");
-});
-// Background image date area end here ***
+	// Background image date area start here ***
+	$("[data-background]").each(function () {
+		// التحقق من حجم الشاشة وتغيير الصورة بناءً عليه
+		let imageUrl = $(this).attr("data-background");
+		if (window.innerWidth <= 768) {
+			// تعديل الرابط للصورة الخاصة بالموبايل
+			imageUrl = imageUrl.replace('.jpg', '-mobile.jpg');
+		}
+		// تعيين الصورة الخلفية للعنصر
+		$(this).css("background-image", "url(" + imageUrl + ")");
+	});
+	// Background image date area end here ***
 
-// استماع لحدث تغيير حجم الشاشة
-window.addEventListener('resize', function() {
-    // الحصول على جميع العناصر التي تحتوي على data-background
-    $("[data-background]").each(function () {
-        let imageUrl = $(this).attr("data-background");
-        if (window.innerWidth <= 768) {
-            // تعديل الرابط للصورة الخاصة بالموبايل
-            imageUrl = imageUrl.replace('.jpg', '-mobile.jpg');
-        } else {
-            // العودة للصورة الأصلية
-            imageUrl = imageUrl.replace('-mobile.jpg', '.jpg');
-        }
-        // تعيين الصورة الخلفية للعنصر
-        $(this).css("background-image", "url(" + imageUrl + ")");
-    });
-});
+	// استماع لحدث تغيير حجم الشاشة
+	window.addEventListener('resize', function () {
+		// الحصول على جميع العناصر التي تحتوي على data-background
+		$("[data-background]").each(function () {
+			let imageUrl = $(this).attr("data-background");
+			if (window.innerWidth <= 768) {
+				// تعديل الرابط للصورة الخاصة بالموبايل
+				imageUrl = imageUrl.replace('.jpg', '-mobile.jpg');
+			} else {
+				// العودة للصورة الأصلية
+				imageUrl = imageUrl.replace('-mobile.jpg', '.jpg');
+			}
+			// تعيين الصورة الخلفية للعنصر
+			$(this).css("background-image", "url(" + imageUrl + ")");
+		});
+	});
 
 
 	// Video popup area start here ***
