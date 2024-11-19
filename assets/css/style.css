@@ -220,7 +220,7 @@ h2 {
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: 600;
   line-height: 1;
   text-align: center;
@@ -232,6 +232,12 @@ h2 {
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
+}
+
+@media screen and (max-width: 767px) {
+  .project_filters li a {
+    font-size: 12px;
+  }
 }
 
 .project_filters li a:hover,
@@ -2065,6 +2071,10 @@ p a:hover {
     padding-bottom: 30px;
   }
 
+  .mb-70 {
+    margin-bottom: 35px;
+  }
+
   .mt-60 {
     margin-top: 30px;
   }
@@ -3391,14 +3401,13 @@ input.main-search-input::placeholder {
   color: var(--white);
 }
 
-.sidebar-area .sidebar__overlay {
-  position: fixed;
+.black__overlay {
+ position: absolute;
   right: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
-  z-index: -1;
 }
 
 .sidebar-area button {
@@ -3687,7 +3696,7 @@ br {
   opacity: 1;
   z-index: -2;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: right;
   background-size: cover;
   transform: scale(1);
   -webkit-transition: all 9s ease-out 0s;
@@ -3695,6 +3704,17 @@ br {
   -ms-transition: all 9s ease-out 0s;
   -o-transition: all 9s ease-out 0s;
   transition: all 9s ease-out 0s;
+}
+
+.banner__slider .slide-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }
 
 .banner__slider .swiper-slide-active .slide-bg {
@@ -4874,6 +4894,23 @@ br {
   transform: translate(0);
 }
 
+.swiper-wrapper{
+  height: 800px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-wrapper{
+    height: 400px !important;
+  }
+}
+
+.swiper-slide {
+  position: relative;
+  /* تحديد الحد الأدنى للارتفاع لضمان عدم تصغير السلايدر */
+  min-height: 500px; /* يمكنك تعديل القيمة حسب احتياجك */
+  height: 100%;
+}
+
 .case-two-area {
   overflow: hidden;
   position: relative;
@@ -5194,9 +5231,9 @@ br {
 }
 
 .brand__wrp {
-  padding: 65px;
+  padding: 30px;
   background: #fff;
-  margin-top: -85px;
+  margin-top: -65px;
   position: relative;
   z-index: 1;
   box-shadow:
@@ -5211,9 +5248,9 @@ br {
   opacity: 0.3;
 }
 
-.brand__image {
+/* .brand__image {
   max-width: 175px;
-}
+} */
 
 .brand-three-area {
   overflow: hidden;
