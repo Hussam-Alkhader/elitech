@@ -31,7 +31,7 @@ class MenuComponent extends HTMLElement {
                             </defs>
                         </svg>
 
-                        <a class="ms-1">+962-79-2605-553</a>
+                        <a class="ms-1">+962-6-4653-641 / +962-79-2605-553</a>
                     </li>
                 </ul>
                 <ul class="link-info">
@@ -108,7 +108,7 @@ class MenuComponent extends HTMLElement {
                                 </ul> -->
                             </li>
                             <li>
-                                <a href="our-projects.html" class="btn-menu">Our projects</a>
+                                <a href="our-projects.html" class="btn-menu">Our Projects</a>
                                 <!-- <ul class="sub-menu">
                                     <li>
                                         <a href="case.html">Case Study 01</a>
@@ -150,7 +150,7 @@ class MenuComponent extends HTMLElement {
                                     </li>
                                 </ul>
                             </li> -->
-                            <li><a href="contact.html" class="btn-menu">Contact</a></li>
+                            <li><a href="contact.html" class="btn-menu">Careers</a></li>
                             <!-- <li class="ml-20 d-none d-lg-block"><a class="search-trigger" href="#0"><svg width="17"
                                         height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_307_344)">
@@ -169,7 +169,7 @@ class MenuComponent extends HTMLElement {
                     </nav>
                 </div>
                 <div class="d-none d-lg-inline-block">
-                    <a href="contact.html" class="btn-one btn-home-orange">Get A Quote <i
+                    <a href="contact.html" class="btn-one btn-home-orange">Contact Us<i
                             class="fa-regular fa-arrow-right-long"></i></a>
                 </div>
                 <div class="bars d-block d-lg-none">
@@ -179,6 +179,43 @@ class MenuComponent extends HTMLElement {
         </div>
     </header>
     <!-- Header area end here -->
+
+        <!-- Sidebar area start here -->
+    <div id="targetElement" class="sidebar-area sidebar__hide">
+        <div class="sidebar__overlay"></div>
+        <a href="index.html" class="logo mb-40">
+            <img src="assets/images/logo/logo.svg" alt="logo">
+        </a>
+        <!-- <div class="sidebar__search mb-30">
+            <input type="text" placeholder="Search...">
+            <i class="fa-regular fa-magnifying-glass"></i>
+        </div> -->
+        <div class="mobile-menu overflow-hidden"></div>
+        <ul class="info pt-40">
+            <!-- <li><i class="fa-solid primary-color fa-location-dot"></i> <a href="#0">example@example.com</a>
+            </li> -->
+            <div class="d-lg-inline-block">
+                <a href="contact.html" class="btn-one btn-home-orange">Contact Us <i
+                        class="fa-regular fa-arrow-right-long"></i></a>
+            </div>
+            <li class="py-2"><i class="fa-solid primary-color fa-phone-volume"></i>
+                +962-6-4653-641
+            </li>
+            <li class="py-2"><i class="fa-solid primary-color fa-mobile-alt"></i>
+                +962-79-2605-553
+            </li>
+            <li><i class="fa-solid primary-color fa-paper-plane"></i>hello@elitechco.com</li>
+        </ul>
+        <div class="social-icon mt-20">
+            <a href="https://www.facebook.com/elitechco" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/elitechco?igsh=NjYwenowemU5ZzFn" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/elitech-co/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <button id="closeButton" class="text-white"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <!-- Sidebar area end here -->
       `;
 
               // Mobile menu

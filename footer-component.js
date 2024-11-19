@@ -76,6 +76,15 @@ class FooterComponent extends HTMLElement {
                                 <h5>
                                     Phone Call:
                                 </h5>
+                                <p>+962-6-4653-641</p>
+                            </div>
+                        </li>
+                                                <li>
+                            <i class="fa-duotone fa-mobile"></i>
+                            <div class="info">
+                                <h5>
+                                    Mobile Call:
+                                </h5>
                                 <p>+962-79-2605-553</p>
                             </div>
                         </li>
