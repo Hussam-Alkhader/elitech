@@ -3723,6 +3723,16 @@ br {
   transform: scale(1.3);
 }
 
+.banner__slider{
+  height: 800px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .banner__slider{
+    height: 400px !important;
+  }
+}
+
 .banner-two__shape1 {
   position: absolute;
   right: 0;
@@ -4894,22 +4904,6 @@ br {
   transform: translate(0);
 }
 
-.swiper-wrapper{
-  height: 800px !important;
-}
-
-@media screen and (max-width: 767px) {
-  .swiper-wrapper{
-    height: 400px !important;
-  }
-}
-
-.swiper-slide {
-  position: relative;
-  /* تحديد الحد الأدنى للارتفاع لضمان عدم تصغير السلايدر */
-  min-height: 500px; /* يمكنك تعديل القيمة حسب احتياجك */
-  height: 100%;
-}
 
 .case-two-area {
   overflow: hidden;
