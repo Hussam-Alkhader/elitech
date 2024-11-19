@@ -4227,6 +4227,12 @@ br {
   /* تأثير ظل إضافي عند التوسيع */
   background-color: #fbfdff;
 }
+.scal-hover {
+  transition: transform 0.3s ease-in-out;
+}
+.scal-hover:hover {
+  transform: scale(1.04);
+}
 
 /* .service-two__item:hover .icon {
   transform: rotateX(-360deg);
@@ -4859,29 +4865,6 @@ br {
   opacity: 1;
   visibility: visible;
   transform: translate(0);
-}
-
-.case__slider {
-  margin-left: 19%;
-}
-
-@media (max-width: 1600px) {
-  .case__slider {
-    margin-left: 12%;
-  }
-}
-
-@media (max-width: 1399px) {
-  .case__slider {
-    margin-left: 10%;
-  }
-}
-
-@media (max-width: 991px) {
-  .case__slider {
-    margin-left: 0%;
-    padding: 0 12px;
-  }
 }
 
 .case__slider .swiper-slide.swiper-slide-active .case__item .case__btn,
