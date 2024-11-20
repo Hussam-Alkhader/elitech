@@ -172,7 +172,6 @@ h2 {
 .gradient-line {
   width: 46%;
   height: 8px;
-  background: linear-gradient(to right, #FFD523, #ffffff);
   margin-bottom: 30px;
   padding-left: 30px;
 }
@@ -2150,6 +2149,16 @@ p a:hover {
   background: var(--gradient-bg) !important;
 }
 
+.gradient-bg-yellow {
+  background: linear-gradient(to right, #FFD523, #ffffff);
+}
+.gradient-bg-purple {
+  background: linear-gradient(to right, #8A7DEA, #ffffff);
+}
+.gradient-bg-orange {
+  background: linear-gradient(to right, #FF7B41, #ffffff);
+}
+
 .bg-purple {
   background: var(--bg-purple) !important;
 }
@@ -2734,7 +2743,6 @@ input.main-search-input::placeholder {
   text-transform: capitalize;
   position: relative;
   z-index: 1;
-  overflow: hidden;
 }
 
 .btn-one i {
