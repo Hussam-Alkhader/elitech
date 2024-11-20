@@ -29,17 +29,9 @@
 <body>
 
     <!-- Preloader area start -->
-    <div class="loading">
-        <span class="text-capitalize">L</span>
-        <span>o</span>
-        <span>a</span>
-        <span>d</span>
-        <span>i</span>
-        <span>n</span>
-        <span>g</span>
-    </div>
-    <div id="preloader">
-    </div>
+    <div id="loading-screen">
+      <div id="logo-animation"></div>
+    </div> 
     <!-- Preloader area end -->
 
 
@@ -66,7 +58,7 @@
 
     <main>
         <!-- Page banner area start here -->
-        <section class="banner__inner-page bg-image pt-180 pb-180 bg-image"
+        <!-- <section class="banner__inner-page bg-image pt-180 pb-180 bg-image"
             data-background="assets/images/banner/banner-inner-page.jpg">
             <div class="shape2 wow slideInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
                 <img src="assets/images/banner/inner-banner-shape2.png" alt="shape">
@@ -84,7 +76,7 @@
                         Us</span>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Page banner area end here -->
 
         <!-- About area start here -->
@@ -104,10 +96,10 @@
                                     alt="shape">
                             </div>
                             <div class="image big-image">
-                                <img src="assets/images/about/about-two-image1.jpg" alt="image">
+                                <img src="assets/images/about/about-us01.jpg" alt="image">
                             </div>
                             <div class="image sm-image">
-                                <img src="assets/images/about/about-two-image2.png" alt="image">
+                                <img src="assets/images/about/about-us02.jpg" alt="image">
                             </div>
                             <div class="circle-shape">
                                 <img class="animation__rotate" src="assets/images/shape/about-two-circle.png"
@@ -471,235 +463,367 @@
         </section> -->
         <!-- Cause area end here -->
 
-  <!-- Testimonial area start here -->
-  <section class="testimonial-area bg-image pt-120 pb-120" data-background="assets/images/bg/testimonial-bg.png">
-    <div class="container">
-        <div class="row g-4">
-            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-                <div class="talk-us__item">
-                    <div class="section-header mb-30">
-                        <h5 class="text-white">
-                            <svg width="28" height="12" viewBox="0 0 28 12" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.75" y="0.75" width="18.5" height="10.5" rx="5.25" stroke="white"
-                                    stroke-width="1.5" />
-                                <rect x="8" width="20" height="12" rx="6" fill="white" />
-                            </svg>
-                            TALK TO US
-                        </h5>
-                        <h2 class="text-white">How May We Help You!</h2>
-                    </div>
-                    <form action="#">
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <label for="name">Your name*</label>
-                                <input type="text" id="name" value="Robot fox">
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="email">Your Email*</label>
-                                <input type="email" id="email" value="hello@elitechco.com">
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="subject">subject*</label>
-                                <input type="text" id="subject" value="Subject">
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="number">Your Phone*</label>
-                                <input type="text" id="number" value="+1253 457 7840">
-                            </div>
-                            <div class="col-12">
-                                <label for="massage">Message*</label>
-                                <textarea id="massage" placeholder="Write Message"></textarea>
-                            </div>
-                        </div>
-                        <button>Sand Message</button>
-                    </form>
+      <!-- Testimonial area start here -->
+      <section
+        class="testimonial-area bg-image pt-120 pb-120"
+
+      >
+        <div class="container">
+          <div class="row g-4">
+            <div
+              class="col-lg-6 wow fadeInLeft"
+              data-wow-delay="200ms"
+              data-wow-duration="1500ms"
+            >
+              <div class="talk-us__item">
+                <div class="section-header mb-30">
+                  <h5 class="text-white">
+                    <svg
+                      width="28"
+                      height="12"
+                      viewBox="0 0 28 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.75"
+                        y="0.75"
+                        width="18.5"
+                        height="10.5"
+                        rx="5.25"
+                        stroke="white"
+                        stroke-width="1.5"
+                      />
+                      <rect x="8" width="20" height="12" rx="6" fill="white" />
+                    </svg>
+                    TALK TO US
+                  </h5>
+                  <h2 class="text-white">How May We Help You!</h2>
                 </div>
+                <form action="#">
+                  <div class="row g-3">
+                    <div class="col-sm-6">
+                      <label for="name">Your name*</label>
+                      <input type="text" id="name" placeholder="Enter your name" />
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="email">Your Email*</label>
+                      <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                      />
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="subject">subject*</label>
+                      <input type="text" id="subject" placeholder="Enter the subject" />
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="number">Your Phone*</label>
+                      <input type="text" id="number" placeholder="Enter the number" />
+                    </div>
+                    <div class="col-12">
+                      <label for="massage">Message*</label>
+                      <textarea
+                        id="massage"
+                        placeholder="Write Message"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <button>Sand Message</button>
+                </form>
+              </div>
             </div>
             <div class="col-lg-6 ps-2 ps-lg-5">
-                <div class="section-header mb-40">
-                    <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <img class="me-1" src="assets/images/icon/section-title.png" alt="icon">
-                        CLIENTS REVIEW
-                    </h5>
-                    <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">What They Say
-                        About Us!</h2>
-                    <p class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">Our clients
-                        consistently praise us for delivering exceptional results and innovative solutions that
-                        exceed their expectations.</p>
-                </div>
-                <div class="swiper testimonial__slider wow fadeInDown" data-wow-delay="00ms"
-                    data-wow-duration="1500ms">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="testimonial__item">
-                                <svg class="coma" width="50" height="37" viewBox="0 0 50 37" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z"
-                                        fill="#3C72FC" />
-                                </svg>
-                                <div class="d-flex align-items-center gap-3">
-                                    <img src="assets/images/testimonial/testimonial-image1.png" alt="image">
-                                    <div class="testi-info">
-                                        <h4>Paul Frisoli </h4>
-                                        <p>Sadlier</p>
-                                        <div class="star mt-1">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mt-30">“ Much gratitude from everyone here for all your (and your
-                                    team’s) incredible work on this project. I hope we will be able to work
-                                    together on future projects soon. ”</p>
-                            </div>
+              <div class="section-header mb-40">
+                <h5
+                  class="wow fadeInUp"
+                  data-wow-delay="00ms"
+                  data-wow-duration="1500ms"
+                >
+                  <img
+                    class="me-1"
+                    src="assets/images/icon/section-title.png"
+                    alt="icon"
+                  />
+                  CLIENTS REVIEW
+                </h5>
+                <h2
+                  class="wow fadeInUp"
+                  data-wow-delay="200ms"
+                  data-wow-duration="1500ms"
+                >
+                  What They Say About Us!
+                </h2>
+                <p
+                  class="wow fadeInUp"
+                  data-wow-delay="400ms"
+                  data-wow-duration="1500ms"
+                >
+                  Our clients consistently praise us for delivering exceptional
+                  results and innovative solutions that exceed their
+                  expectations.
+                </p>
+              </div>
+              <div
+                class="swiper testimonial__slider wow fadeInDown"
+                data-wow-delay="00ms"
+                data-wow-duration="1500ms"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonial__item">
+                      <svg
+                        class="coma"
+                        width="50"
+                        height="37"
+                        viewBox="0 0 50 37"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z"
+                          fill="#3C72FC"
+                        />
+                      </svg>
+                      <div class="d-flex align-items-center gap-3">
+                        <img
+                          src="assets/images/testimonial/person-icon.jpg"
+                          alt="image"
+                        />
+                        <div class="testi-info">
+                          <h4>Paul Frisoli</h4>
+                          <p>Sadlier</p>
+                          <div class="star mt-1">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                          </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="testimonial__item">
-                                <svg class="coma" width="50" height="37" viewBox="0 0 50 37" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z"
-                                        fill="#3C72FC" />
-                                </svg>
-                                <div class="d-flex align-items-center gap-3">
-                                    <img src="assets/images/testimonial/testimonial-image2.png" alt="image">
-                                    <div class="testi-info">
-                                        <h4>Ruth Bandong</h4>
-                                        <p>Sadlier</p>
-                                        <div class="star mt-1">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mt-30">“ I had the pleasure of working with Manar and her team on PIM UAE. They were incredibly efficient and responsive, both via email and WhatsApp. Thanks to their quick turnaround, we were able to push the PIM UAE project in record time. I really enjoyed working with Manar and would love the chance to collaborate again in the future!
-                                    ”</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testimonial__item">
-                                <svg class="coma" width="50" height="37" viewBox="0 0 50 37" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z"
-                                        fill="#3C72FC" />
-                                </svg>
-                                <div class="d-flex align-items-center gap-3">
-                                    <img src="assets/images/testimonial/testimonial-image2.png" alt="image">
-                                    <div class="testi-info">
-                                        <h4>Ray Patterson</h4>
-                                        <p>Nlight</p>
-                                        <div class="star mt-1">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mt-30">“ Elitech team is efficient, effective and cooperative.<br>
-                                    It was a pleasure working with you!
-                                    ”</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testimonial__item">
-                                <svg class="coma" width="50" height="37" viewBox="0 0 50 37" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z"
-                                        fill="#3C72FC" />
-                                </svg>
-                                <div class="d-flex align-items-center gap-3">
-                                    <img src="assets/images/testimonial/testimonial-image2.png" alt="image">
-                                    <div class="testi-info">
-                                        <h4>Khalid Rebhi</h4>
-                                        <p>Redwan publisher</p>
-                                        <div class="star mt-1">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mt-30">“ Your ability to deliver projects with exceptional quality,
-                                    efficiency, and cost-effectiveness makes you the ideal choice for any
-                                    publisher.
-                                    ”</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testimonial__item">
-                                <svg class="coma" width="50" height="37" viewBox="0 0 50 37" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z"
-                                        fill="#3C72FC" />
-                                </svg>
-                                <div class="d-flex align-items-center gap-3">
-                                    <img src="assets/images/testimonial/testimonial-image2.png" alt="image">
-                                    <div class="testi-info">
-                                        <h4>Rania Sabri</h4>
-                                        <p>Excel Pixel</p>
-                                        <div class="star mt-1">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mt-30">“ We couldn’t be more grateful for Elitech’s professionalism
-                                    and quality on this project!
-                                    ”</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testimonial__item">
-                                <svg class="coma" width="50" height="37" viewBox="0 0 50 37" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z"
-                                        fill="#3C72FC" />
-                                </svg>
-                                <div class="d-flex align-items-center gap-3">
-                                    <img src="assets/images/testimonial/testimonial-image2.png" alt="image">
-                                    <div class="testi-info">
-                                        <h4>Yiannis Kokkalis</h4>
-                                        <p>Hamilton House</p>
-                                        <div class="star mt-1">
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                            <i class="fa-sharp fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mt-30">“ ...................
-                                    ”</p>
-                            </div>
-                        </div>
+                      </div>
+                      <p class="mt-30">
+                        “ Much gratitude from everyone here for all your (and
+                        your team’s) incredible work on this project. I hope we
+                        will be able to work together on future projects soon. ”
+                      </p>
                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial__item">
+                      <svg
+                        class="coma"
+                        width="50"
+                        height="37"
+                        viewBox="0 0 50 37"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z"
+                          fill="#3C72FC"
+                        />
+                      </svg>
+                      <div class="d-flex align-items-center gap-3">
+                        <img
+                          src="assets/images/testimonial/person-icon.jpg"
+                          alt="image"
+                        />
+                        <div class="testi-info">
+                          <h4>Ruth Bandong</h4>
+                          <p>Sadlier</p>
+                          <div class="star mt-1">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="mt-30">
+                        “ I had the pleasure of working with Manar and her team
+                        on PIM UAE. They were incredibly efficient and
+                        responsive, both via email and WhatsApp. Thanks to their
+                        quick turnaround, we were able to push the PIM UAE
+                        project in record time. I really enjoyed working with
+                        Manar and would love the chance to collaborate again in
+                        the future! ”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial__item">
+                      <svg
+                        class="coma"
+                        width="50"
+                        height="37"
+                        viewBox="0 0 50 37"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z"
+                          fill="#3C72FC"
+                        />
+                      </svg>
+                      <div class="d-flex align-items-center gap-3">
+                        <img
+                          src="assets/images/testimonial/person-icon.jpg"
+                          alt="image"
+                        />
+                        <div class="testi-info">
+                          <h4>Ray Patterson</h4>
+                          <p>Nlight</p>
+                          <div class="star mt-1">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="mt-30">
+                        “ Elitech team is efficient, effective and
+                        cooperative.<br />
+                        It was a pleasure working with you! ”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial__item">
+                      <svg
+                        class="coma"
+                        width="50"
+                        height="37"
+                        viewBox="0 0 50 37"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z"
+                          fill="#3C72FC"
+                        />
+                      </svg>
+                      <div class="d-flex align-items-center gap-3">
+                        <img
+                          src="assets/images/testimonial/person-icon.jpg"
+                          alt="image"
+                        />
+                        <div class="testi-info">
+                          <h4>Khalid Rebhi</h4>
+                          <p>Redwan publisher</p>
+                          <div class="star mt-1">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="mt-30">
+                        “ Your ability to deliver projects with exceptional
+                        quality, efficiency, and cost-effectiveness makes you
+                        the ideal choice for any publisher. ”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial__item">
+                      <svg
+                        class="coma"
+                        width="50"
+                        height="37"
+                        viewBox="0 0 50 37"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z"
+                          fill="#3C72FC"
+                        />
+                      </svg>
+                      <div class="d-flex align-items-center gap-3">
+                        <img
+                          src="assets/images/testimonial/person-icon.jpg"
+                          alt="image"
+                        />
+                        <div class="testi-info">
+                          <h4>Rania Sabri</h4>
+                          <p>Excel Pixel</p>
+                          <div class="star mt-1">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="mt-30">
+                        “ We couldn’t be more grateful for Elitech’s
+                        professionalism and quality on this project! ”
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial__item">
+                      <svg
+                        class="coma"
+                        width="50"
+                        height="37"
+                        viewBox="0 0 50 37"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0V37L18.75 18.5V0H0ZM31.25 0V37L50 18.5V0H31.25Z"
+                          fill="#3C72FC"
+                        />
+                      </svg>
+                      <div class="d-flex align-items-center gap-3">
+                        <img
+                          src="assets/images/testimonial/person-icon.jpg"
+                          alt="image"
+                        />
+                        <div class="testi-info">
+                          <h4>Yiannis Kokkalis</h4>
+                          <p>Hamilton House</p>
+                          <div class="star mt-1">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="mt-30">“ ................... ”</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="testimonial__arry-btn mt-40 wow fadeInDown" data-wow-delay="200ms"
-                    data-wow-duration="1500ms">
-                    <button class="arry-prev testimonial__arry-prev"><i
-                            class="fa-light fa-chevron-left"></i></button>
-                    <button class="arry-next testimonial__arry-next active"><i
-                            class="fa-light fa-chevron-right"></i></button>
-                </div>
+              </div>
+              <div
+                class="testimonial__arry-btn mt-40 wow fadeInDown"
+                data-wow-delay="200ms"
+                data-wow-duration="1500ms"
+              >
+                <button class="arry-prev testimonial__arry-prev">
+                  <i class="fa-light fa-chevron-left"></i>
+                </button>
+                <button class="arry-next testimonial__arry-next active">
+                  <i class="fa-light fa-chevron-right"></i>
+                </button>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
-<!-- Testimonial area end here -->
+      </section>
+      <!-- Testimonial area end here -->
+
 
         <!-- Team area start here -->
         <section class="team-area pt-120 pb-120">
@@ -857,8 +981,8 @@
     <script src="assets/js/jquery.counterup.min.js"></script>
     <!-- Wow min Js -->
     <script src="assets/js/wow.min.js"></script>
-    <!-- Pace min Js -->
-    <script src="assets/js/pace.min.js"></script>
+    <!-- preloader Js -->
+    <script src="assets/js/preloader.js"></script>
     <!-- Magnific popup min Js -->
     <script src="assets/js/magnific-popup.min.js"></script>
     <!-- Nice select min Js -->

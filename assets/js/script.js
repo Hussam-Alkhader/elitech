@@ -31,18 +31,6 @@ CSS TABLE OF CONTENTS
 
 (function ($) {
 	("use strict");
-	// Preloader area start here ***
-	paceOptions = {
-		ajax: true,
-		document: true,
-		eventLag: false,
-	};
-
-	Pace.on("done", function () {
-		$("#preloader").addClass("isdone");
-		$(".loading").addClass("isdone");
-	});
-	// Preloader area end here ***
 
 	// // Mouse cursor area start here ***
 	// function mousecursor() {
