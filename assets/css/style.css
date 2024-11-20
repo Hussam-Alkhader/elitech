@@ -608,8 +608,8 @@ h2 {
 
 @media (max-width: 767px) {
   h2 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 55px !important;
+    line-height: 65px !important;
   }
 }
 
@@ -891,35 +891,39 @@ p a:hover {
   margin-bottom: 20px;
 }
 
-.mbt-130 {
-  margin-bottom: 130px;
+.mbt-85 {
+  margin-bottom: 85px;
   width: 51%;
   text-align: left;
 }
 
 @media (max-width: 767px) {
+  .mbt-85 {
+    width: 100%;
+    text-align: left;
+  }
   .mbt-130 {
     width: 100%;
   }
 
   .heading {
     position: relative !important;
-    top: 0px !important;
-    right: 0px !important;
-    padding: 0px !important;
-    width: 500px;
+    top: -920px !important;
+    right: 10px !important;
+    padding: 40px !important;
     height: auto;
   }
   
   .heading2 {
     position: relative !important;
-    top: 0px !important;
-    right: 0px !important;
-    padding: 0px !important;
-    width: 900px;
-    height: auto;
+    top: -250px !important;
+    right: 100px !important;
+    padding: 200px !important;
     z-index: -2;
   
+  }
+  .mt--940 {
+    margin-top: -940px;
   }
 }
 
