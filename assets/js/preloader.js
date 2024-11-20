@@ -12,7 +12,7 @@ lottieScript.onload = function () {
   setTimeout(function() {
     const loadingScreen = document.getElementById('loading-screen');
     loadingScreen.classList.add('hidden');
-  }, 1000);
+  }, 600);
 };
 
 document.head.appendChild(lottieScript);
