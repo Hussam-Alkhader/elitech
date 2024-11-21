@@ -169,7 +169,7 @@ class MenuComponent extends HTMLElement {
                     </nav>
                 </div>
                 <div class="d-none d-lg-inline-block">
-                    <a href="contact.html" class="btn-one btn-home-orange">Contact Us<i
+                    <a href="contact.html" class="btn-one btn-home-yellow">Contact Us<i
                             class="fa-regular fa-arrow-right-long"></i></a>
                 </div>
                 <div class="bars d-block d-lg-none">
@@ -195,7 +195,7 @@ class MenuComponent extends HTMLElement {
             <!-- <li><i class="fa-solid primary-color fa-location-dot"></i> <a href="#0">example@example.com</a>
             </li> -->
             <div class="d-lg-inline-block">
-                <a href="contact.html" class="btn-one btn-home-orange">Contact Us <i
+                <a href="contact.html" class="btn-one btn-home-yellow">Contact Us <i
                         class="fa-regular fa-arrow-right-long"></i></a>
             </div>
             <li class="py-2"><i class="fa-solid primary-color fa-phone-volume"></i>
