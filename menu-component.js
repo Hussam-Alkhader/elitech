@@ -150,7 +150,7 @@ class MenuComponent extends HTMLElement {
                                     </li>
                                 </ul>
                             </li> -->
-                            <li><a href="contact.html" class="btn-menu">Careers</a></li>
+                            <li><a href="https://forms.gle/2LrUVd6WxFpPAkSXA" class="btn-menu" target="_blank">Careers</a></li>
                             <!-- <li class="ml-20 d-none d-lg-block"><a class="search-trigger" href="#0"><svg width="17"
                                         height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_307_344)">
