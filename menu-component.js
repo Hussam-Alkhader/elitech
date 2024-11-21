@@ -117,7 +117,7 @@ class MenuComponent extends HTMLElement {
                                         <a href="case-2.html">Case Study 02</a>
                                     </li>
                                     <li>
-                                        <a href="etiquette-project.html">Case Study Details</a>
+                                        <a href="yeti-project.html">Case Study Details</a>
                                     </li>
                                     <li>
                                         <a href="team.html">Our Team</a>
