@@ -197,6 +197,7 @@ h2 {
   margin-bottom: 30px;
   padding-left: 0;
 }
+
 .ot-button {
   margin-top: 30px;
 }
@@ -410,7 +411,7 @@ h2 {
 }
 
 .projects-col3 {
-width: 84%;
+  width: 84%;
 }
 
 .project-filter-wrapper {
@@ -567,7 +568,7 @@ width: 84%;
   .projects-col3 .project-item {
     width: 50%;
   }
-  
+
 }
 
 .projects-no-gaps [class*='col-'] {
@@ -903,6 +904,7 @@ p a:hover {
     width: 100%;
     text-align: left;
   }
+
   .mbt-130 {
     width: 100%;
   }
@@ -910,22 +912,28 @@ p a:hover {
   .heading {
     position: relative !important;
     top: -920px !important;
-    right: 10px !important;
-    padding: 40px !important;
+    right: 55px !important;
+    margin-bottom: -570px !important;
+    padding: 13px !important;
     height: auto;
   }
-  
+
   .heading2 {
     position: relative !important;
-    top: -250px !important;
-    right: 100px !important;
+    top: -200px !important;
+    right: 50px !important;
     padding: 200px !important;
-    z-index: -2;
-  
+    z-index: -4;
   }
+
   .mt--940 {
     margin-top: -940px;
   }
+}
+
+
+.x-3 {
+  z-index: -3;
 }
 
 @media (max-width: 1199px) and (min-width: 767px) {
@@ -2135,6 +2143,7 @@ p a:hover {
 .primary2-bg {
   background-color: var(--primary-color) !important;
 }
+
 .primary-color {
   color: var(--primary-color) !important;
 }
@@ -2154,9 +2163,11 @@ p a:hover {
 .gradient-bg-yellow {
   background: linear-gradient(to right, #FFD523, #ffffff);
 }
+
 .gradient-bg-purple {
   background: linear-gradient(to right, #8A7DEA, #ffffff);
 }
+
 .gradient-bg-orange {
   background: linear-gradient(to right, #FF7B41, #ffffff);
 }
@@ -2494,20 +2505,25 @@ input.main-search-input::placeholder {
 }
 
 #loading-screen {
-  position: fixed; /* لتغطية الشاشة */
+  position: fixed;
+  /* لتغطية الشاشة */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: white;
   display: flex;
-  justify-content: center; /* محاذاة العناصر في المنتصف */
-  align-items: center; /* محاذاة العناصر عموديًا */
-  z-index: 1000; /* التأكد من أن الشاشة في الأعلى */
+  justify-content: center;
+  /* محاذاة العناصر في المنتصف */
+  align-items: center;
+  /* محاذاة العناصر عموديًا */
+  z-index: 1000;
+  /* التأكد من أن الشاشة في الأعلى */
   transition: opacity 0.4s ease, visibility 0.4s ease;
   opacity: 1;
   visibility: visible;
 }
+
 #loading-screen.hidden {
   opacity: 0;
   visibility: hidden;
@@ -2840,6 +2856,7 @@ input.main-search-input::placeholder {
   --gradient-bg: linear-gradient(to right, #FF7B41, #FF9E41) !important;
   --secondary-color: #FF9E41 !important;
 }
+
 .btn-home-purple {
   --gradient-bg: linear-gradient(to right, #7268be, #8A7DEA) !important;
   --secondary-color: #8A7DEA !important;
@@ -3608,6 +3625,7 @@ input.main-search-input::placeholder {
   .banner__shape-right2 {
     display: none;
   }
+
   .banner__line {
     position: relative !important;
     scale: 0.7 !important;
@@ -3616,7 +3634,8 @@ input.main-search-input::placeholder {
     margin-bottom: -100px;
     margin-top: -20px;
   }
-  .banner__content{
+
+  .banner__content {
     text-align: center;
   }
 }
@@ -3783,12 +3802,12 @@ br {
   transform: scale(1.3);
 }
 
-.banner__slider{
+.banner__slider {
   height: 600px !important;
 }
 
 @media screen and (max-width: 767px) {
-  .banner__slider{
+  .banner__slider {
     height: 700px !important;
   }
 }
@@ -4317,9 +4336,11 @@ br {
   /* تأثير ظل إضافي عند التوسيع */
   background-color: #fbfdff;
 }
+
 .scal-hover {
   transition: transform 0.3s ease-in-out;
 }
+
 .scal-hover:hover {
   transform: scale(1.04);
 }
@@ -4347,8 +4368,8 @@ br {
 .heading {
   position: absolute;
   top: 100px;
-  right: 200px;
-  width: 500px;
+  right: 150px;
+  width: 600px;
   height: auto;
 }
 
@@ -4358,7 +4379,7 @@ br {
   right: -300px;
   width: 900px;
   height: auto;
-  z-index: -2;
+  z-index: -4;
 
 }
 
@@ -4484,14 +4505,16 @@ br {
   .service-three__item {
     margin-bottom: 40px;
   }
+
   .about__left-item,
   .about-two__left-item {
     max-width: 580px;
     margin: 0 auto;
   }
+
   .projects-col3 {
     width: 100%;
-    }
+  }
 }
 
 .service-single-area {
