@@ -911,27 +911,26 @@ p a:hover {
 
   .heading {
     position: relative !important;
-    top: -850px !important;
-    margin-bottom: -430px !important;
+    top: 0px !important;
+    margin-bottom: -380px !important;
     width: 100% !important;
     height: 100% !important;
     right: 0px !important;
   }
 
   .final {
-    margin-bottom: 110px !important;
+    margin-bottom: 90px !important;
   }
 
   .heading2 {
     position: relative !important;
-    top: -410px !important;
-    right: -40px !important;
-    scale: 0.8;
+    top: 0px !important;
+    right: -130px !important;
+    width: 150% !important;
+    height: 150% !important;
+    margin-bottom: -270px !important;
+    margin-top: -260px !important;
     z-index: -4;
-  }
-
-  .mt--940 {
-    margin-top: -940px;
   }
 }
 
