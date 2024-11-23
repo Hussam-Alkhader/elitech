@@ -911,14 +911,15 @@ p a:hover {
 
   .heading {
     position: relative !important;
-    top: -880px !important;
-    right: 85px !important;
+    top: -850px !important;
     margin-bottom: -430px !important;
-    padding: 0 80px 0 80px !important;
+    width: 100% !important;
+    height: 100% !important;
+    right: 0px !important;
   }
 
   .final {
-    margin-bottom: 80px !important;
+    margin-bottom: 110px !important;
   }
 
   .heading2 {
@@ -942,13 +943,14 @@ p a:hover {
 @media (max-width: 1199px) and (min-width: 767px) {
   .heading {
     right: -20px !important;
-    width: 400px !important;
+    width: 500px !important;
     ;
   }
 
   .heading2 {
     right: -500px !important;
-    width: 720px !important;
+    top: -240px !important;
+    width: 850px !important;
     ;
   }
 }
