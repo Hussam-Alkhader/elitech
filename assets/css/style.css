@@ -911,18 +911,21 @@ p a:hover {
 
   .heading {
     position: relative !important;
-    top: -920px !important;
-    right: 55px !important;
-    margin-bottom: -570px !important;
-    padding: 13px !important;
-    height: auto;
+    top: -880px !important;
+    right: 85px !important;
+    margin-bottom: -430px !important;
+    padding: 0 80px 0 80px !important;
+  }
+
+  .final {
+    margin-bottom: 80px !important;
   }
 
   .heading2 {
     position: relative !important;
-    top: -340px !important;
-    right: -100px !important;
-    scale: 0.9;
+    top: -410px !important;
+    right: -40px !important;
+    scale: 0.8;
     z-index: -4;
   }
 
