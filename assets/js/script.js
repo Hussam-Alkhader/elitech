@@ -161,10 +161,12 @@ CSS TABLE OF CONTENTS
 		};
 		animated();
 		init.on("slideChangeTransitionStart", function () {
+			$(selector + " .swiper-slide").addClass("hide-slide");
 			$(selector + " [data-animation]").removeClass("animated");
 		});
 		init.on("slideChangeTransitionEnd", function () {
 			animated();
+			$(selector + " .swiper-slide").removeClass("hide-slide");
 		});
 	}
 	animated_swiper(sliderActive1, sliderInit1);
