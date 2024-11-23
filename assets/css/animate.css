@@ -2486,15 +2486,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @-webkit-keyframes slideInDiagonalBottom {
   0% {
     opacity: 0;
-    filter: blur(40px);
+    filter: blur(5px);
     -webkit-transform: translate(-1000px, 1000px);
     transform: translate(-1000px, 1000px);
-  }
-
-  50% {
-    filter: blur(20px);
-    -webkit-transform: translate(-500px, 500px);
-    transform: translate(-500px, 500px);
   }
 
   100% {
@@ -2508,17 +2502,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @keyframes slideInDiagonalBottom {
   0% {
     opacity: 0;
-    filter: blur(40px);
+    filter: blur(5px);
     -webkit-transform: translate(-1000px, 1000px);
     -ms-transform: translate(-1000px, 1000px);
     transform: translate(-1000px, 1000px);
-  }
-
-  50% {
-    filter: blur(20px);
-    -webkit-transform: translate(-500px, 500px);
-    -ms-transform: translate(-500px, 500px);
-    transform: translate(-500px, 500px);
   }
 
   100% {
