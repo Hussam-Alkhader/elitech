@@ -159,7 +159,6 @@ CSS TABLE OF CONTENTS
 					});
 			});
 		};
-		animated();
 		init.on("slideChangeTransitionStart", function () {
 			$(selector + " .swiper-slide").addClass("hide-slide");
 			$(selector + " [data-animation]").removeClass("animated");
@@ -168,6 +167,7 @@ CSS TABLE OF CONTENTS
 			animated();
 			$(selector + " .swiper-slide").removeClass("hide-slide");
 		});
+		animated();
 	}
 	animated_swiper(sliderActive1, sliderInit1);
 	// Banner Two slider area end here ***

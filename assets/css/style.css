@@ -3748,6 +3748,12 @@ input.main-search-input::placeholder {
   font-weight: 700;
 }
 
+.hide-slide {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s 0.5s, opacity 0.5s ease;
+}
+
 @media (max-width: 991px) {
 
   .banner__content h1,
@@ -3765,6 +3771,12 @@ input.main-search-input::placeholder {
   .banner-three__content h1 {
     font-size: 30px;
     line-height: 60px;
+  }
+
+  .banner__content h4,
+  .banner-two__content h4,
+  .banner-three__content h4 {
+    font-size: 15px !important;
   }
 }
 
