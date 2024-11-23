@@ -128,7 +128,7 @@ CSS TABLE OF CONTENTS
 		loop: true,
 		slidesPerView: 1,
 		effect: "fade",
-		speed: 3000,
+		speed: 1,
 		autoplay: {
 			delay: 7000,
 			disableOnInteraction: false,
@@ -145,8 +145,8 @@ CSS TABLE OF CONTENTS
 				var anim = $(this).data("animation");
 				var delay = $(this).data("delay");
 				var duration = $(this).data("duration");
+				$(this).removeClass("animated " + anim);
 				$(this)
-					.removeClass("anim" + anim)
 					.addClass(anim + " animated")
 					.css({
 						webkitAnimationDelay: delay,
@@ -160,10 +160,12 @@ CSS TABLE OF CONTENTS
 			});
 		};
 		animated();
-		init.on("slideChange", function () {
-			$(sliderActive1 + " [data-animation]").removeClass("animated");
+		init.on("slideChangeTransitionStart", function () {
+			$(selector + " [data-animation]").removeClass("animated");
 		});
-		init.on("slideChange", animated);
+		init.on("slideChangeTransitionEnd", function () {
+			animated();
+		});
 	}
 	animated_swiper(sliderActive1, sliderInit1);
 	// Banner Two slider area end here ***
@@ -172,54 +174,54 @@ CSS TABLE OF CONTENTS
 	$(document).ready(function () {
 		let currentFilter = '*'; // حفظ الفلتر الحالي
 		let maxVisibleItems = Number.POSITIVE_INFINITY; // تعريف المتغير هنا بقيمة افتراضية (جميع العناصر)
-	
+
 		$('.projects-grid').each(function () {
 			var $container = $(this);
-	
+
 			// الحصول على العدد من data-max-items أو استخدام قيمة افتراضية
 			maxVisibleItems = $(this).data('max-items') || Number.POSITIVE_INFINITY;
-	
+
 			$container.isotope({
 				itemSelector: '.project-item',
 				animationEngine: 'css',
 			});
-	
+
 			var $optionSets = $('.project_filters'),
 				$optionLinks = $optionSets.find('a');
-	
+
 			$optionLinks.on('click', function () {
 				var $this = $(this);
-	
+
 				if ($this.hasClass('selected')) {
 					return false;
 				}
 				var $optionSet = $this.parents('.project_filters');
 				$optionSets.find('.selected').removeClass('selected');
 				$this.addClass('selected');
-	
+
 				var selector = $(this).attr('data-filter');
 				currentFilter = selector; // تحديث الفلتر الحالي
 				$container.isotope({
 					filter: selector
 				});
-	
+
 				// تقييد عدد العناصر الظاهرة
 				limitVisibleItems(selector, $container);
-	
+
 				return false;
 			});
-	
+
 			// عند تحميل الصفحة أو العودة إلى التبويب
 			limitVisibleItems(currentFilter, $container);
 		});
-	
+
 		// دالة لتقييد العناصر المعروضة إلى العدد المحدد
 		function limitVisibleItems(selector, $container) {
 			var visibleCount = 0;
-	
+
 			$('.project-item').each(function () {
 				var $item = $(this);
-	
+
 				// إذا كان العنصر يطابق الفلتر الحالي
 				if (selector === '*' || $item.is(selector)) {
 					if (visibleCount < maxVisibleItems) {
@@ -232,21 +234,21 @@ CSS TABLE OF CONTENTS
 					$item.hide(); // إخفاء العناصر غير المطابقة
 				}
 			});
-	
+
 			// إعادة ترتيب العناصر بعد التغييرات
 			$container.isotope('layout');
 		}
-	
+
 		// تغيير العدد المعروض عند الحاجة (يمكنك استدعاء هذه الدالة حسب الرغبة)
 		function setMaxVisibleItems(newMax) {
 			maxVisibleItems = newMax;
 			limitVisibleItems(currentFilter, $('.projects-grid'));
 		}
-	
+
 		// مثال لاستخدام هذه الوظيفة:
 		// setMaxVisibleItems(10); // لتغيير العدد إلى 10
 	});
-	
+
 	/*Portfolio Filter*/
 
 
@@ -475,14 +477,14 @@ CSS TABLE OF CONTENTS
 	// });
 	// 		// Background image date area end here ***
 
-		// Background image date area start here ***
-		$("[data-background").each(function () {
-			$(this).css(
-				"background-image",
-				"url( " + $(this).attr("data-background") + "  )"
-			);
-		});
-		// Background image date area end here ***
+	// Background image date area start here ***
+	$("[data-background").each(function () {
+		$(this).css(
+			"background-image",
+			"url( " + $(this).attr("data-background") + "  )"
+		);
+	});
+	// Background image date area end here ***
 
 
 	// Video popup area start here ***
