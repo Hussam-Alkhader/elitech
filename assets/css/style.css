@@ -912,24 +912,24 @@ p a:hover {
   .heading {
     position: relative !important;
     top: 0px !important;
-    margin-bottom: -380px !important;
+    margin-bottom: -98% !important;
     width: 100% !important;
     height: 100% !important;
     right: 0px !important;
   }
 
   .final {
-    margin-bottom: 90px !important;
+    margin-bottom: 7% !important;
   }
 
   .heading2 {
     position: relative !important;
     top: 0px !important;
-    right: -130px !important;
+    right: -30% !important;
     width: 150% !important;
     height: 150% !important;
-    margin-bottom: -270px !important;
-    margin-top: -260px !important;
+    margin-bottom: -80% !important;
+    margin-top: -70% !important;
     z-index: -4;
   }
 }
