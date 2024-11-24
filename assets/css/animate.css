@@ -2486,7 +2486,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @-webkit-keyframes slideInDiagonalBottom {
   0% {
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(10px);
     -webkit-transform: translate(-1000px, 1000px);
     transform: translate(-1000px, 1000px);
   }
@@ -2502,7 +2502,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @keyframes slideInDiagonalBottom {
   0% {
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(10px);
     -webkit-transform: translate(-1000px, 1000px);
     -ms-transform: translate(-1000px, 1000px);
     transform: translate(-1000px, 1000px);
