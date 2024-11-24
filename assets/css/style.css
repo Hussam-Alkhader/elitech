@@ -4635,7 +4635,7 @@ br {
 
 .about__left-item .big-image,
 .about-two__left-item .big-image {
-  max-width: 300px;
+  max-width: 380px;
   position: relative;
   z-index: 1;
 }
@@ -4706,6 +4706,12 @@ br {
   .about-two-area {
     padding-bottom: 60px;
   }
+  .about__left-item .big-image{
+  max-width: 250px !important;
+}
+.sm-image{
+  max-width: 200px !important;
+}
 }
 
 .about-two__shape {
