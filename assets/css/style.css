@@ -5376,7 +5376,14 @@ br {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 15px;
+}
+
+@media screen and (max-width: 450px) {
+  .case-single__item .case-date {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .case-single__item .case-date li {
