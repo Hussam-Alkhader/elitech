@@ -426,8 +426,24 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 .image-project-right img {
   max-width: 100%;
-  height: auto; /* لضمان الحفاظ على نسبة الأبعاد */
-  transform: translateX(27%) translateY(8%);
+  height: auto;
+}
+.image-project-right {
+  transform: translateX(30%) translateY(-5%);
+}
+
+
+
+.image-project-right img:nth-child(2) {
+  transform: translateX(-10%) translateY(-30%);
+}
+
+@media screen and (max-width: 767px) {
+  .image-project-left img,
+  .image-project-right img,
+  .image-project-right {
+    transform: translateX(0) translateY(0);
+  }
 }
 
 
