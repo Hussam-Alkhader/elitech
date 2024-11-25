@@ -5,13 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
 	const CaroSlider = new MicroSlider(CaroS, { indicators: true, indicatorText: '' });
 
   // 2. قائمة الأيقونات بالترتيب
-  const iconSets = {
+  const iconSets = { 
     "page1-icons": [
-      { icon: "assets/images/case/Asset 20@2x-100.png", text: "Home" },
-      { icon: "assets/images/case/Asset 21@2x-100.png", text: "About" },
-      { icon: "assets/images/case/Asset 22@2x-100.png", text: "Services" },
-      { icon: "assets/images/case/Asset 23@2x-100.png", text: "Portfolio" },
-      { icon: "assets/images/case/Asset 24@2x-100.png", text: "Contact" },
+      { icon: "assets/images/case/Asset 20@2x-100.png", text: "Videos" },
+      { icon: "assets/images/case/Asset 25@2x-100.png", text: "Reading" },
+      { icon: "assets/images/case/Asset 24@2x-100.png", text: "Vocabulary" },
+      { icon: "assets/images/case/Asset 21@2x-100.png", text: "Wordlist" },
+      { icon: "assets/images/case/Asset 22@2x-100.png", text: "Songs" },
+      { icon: "assets/images/case/Asset 23@2x-100.png", text: "Grammar" },
     ],
     "page2-icons": [
       { icon: "assets/images/case/Asset 25@2x-100.png", text: "Profile" },

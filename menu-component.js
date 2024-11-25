@@ -194,17 +194,18 @@ class MenuComponent extends HTMLElement {
         <ul class="info pt-40">
             <!-- <li><i class="fa-solid primary-color fa-location-dot"></i> <a href="#0">example@example.com</a>
             </li> -->
-            <div class="d-lg-inline-block">
+            <div class="d-lg-inline-block sidebar-button">
                 <a href="contact.html" class="btn-one btn-home-yellow">Contact Us <i
                         class="fa-regular fa-arrow-right-long"></i></a>
             </div>
             <li class="py-2"><i class="fa-solid primary-color fa-phone-volume"></i>
-                +962-6-4653-641
+               <span> +962-6-4653-641</span>
             </li>
             <li class="py-2"><i class="fa-solid primary-color fa-mobile-alt"></i>
-                +962-79-2605-553
+                <span> +962-79-2605-553</span>
             </li>
-            <li><i class="fa-solid primary-color fa-paper-plane"></i>hello@elitechco.com</li>
+                <li class="py-2"><i class="fa-solid primary-color fa-paper-plane"></i><span>hello@elitechco.com</span></i>
+            </li>
         </ul>
         <div class="social-icon mt-20">
             <a href="https://www.facebook.com/elitechco" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
