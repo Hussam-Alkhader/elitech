@@ -304,11 +304,20 @@ pointer-events: none;
   margin: 0;
 }
 
-.indicators .indicator img {
-  width: 38px; /* عرض الصورة */
-  height: 38px; /* ارتفاع الصورة */
-  object-fit: contain; /* للحفاظ على نسبة الأبعاد */
+.indicator-icon {
+  height: 50px;
+  width: 50px;
   transition: transform 0.3s, box-shadow 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.indicator-text {
+  display: block; /* يجعل النص يظهر أسفل الصورة */
+  text-align: center; /* يحاذي النص في المنتصف */
+  font-size: 12px; /* حجم النص */
+  color: #555; /* لون النص */
+  margin-top: 4px; /* مسافة بين النص والصورة */
 }
 
 .indicators .indicator.active img {
@@ -318,6 +327,58 @@ pointer-events: none;
 .indicators .indicator img:hover {
   transform: scale(1.1); /* تكبير عند تمرير الفأرة */
 }
+
+.indicators li {
+  margin-right: 10px;
+  text-align: center;
+  float: left;
+  margin-right: 8px;
+}
+
+.indicators {
+	  top: 0;
+    left: 50%;
+    padding: 0;
+    list-style-type: none;
+    margin: 65px 0 0 -163px;
+    position: absolute;
+}
+
+
+
+
+
+/* .indicators {
+	top: 0;
+    left: 50%;
+    padding: 0;
+    list-style-type: none;
+    margin: 40px 0 0 -77px;
+    position: absolute;
+}
+
+.indicators li {
+    color: #255f8b;
+    float: left;
+    height: 16px;
+    margin-right: 8px;
+    text-align: center;
+    width: 16px;
+}
+
+.indicators li:last-child {margin: 0;}
+.indicators a {
+    background: #00416a;
+    border-radius: 8px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.indicators .active a {
+	background: #e4e5e6;
+
+} */
 
 
 
