@@ -3690,7 +3690,7 @@ input.main-search-input::placeholder {
   padding-left: 10px !important;
 }
 
-.py-2 i, span{
+.py-2 i, .py-2 span {
   color: var(--white) !important;
 }
 
