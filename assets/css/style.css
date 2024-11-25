@@ -148,6 +148,10 @@ h6 {
   font-family: var(--kumbh);
 }
 
+.black-color{
+  color: var(--black);
+}
+
 h1 {
   font-size: 90px;
   font-weight: 700;
@@ -208,7 +212,7 @@ h2 {
 
 }
 .carousel-slider-color{
-  background-color: #f4fbfd;
+  background-color: #ebfbff;
 }
 
 .Carousel-slider.fullwidth {
@@ -328,12 +332,19 @@ pointer-events: none;
   margin-top: 4px; /* مسافة بين النص والصورة */
 }
 
-.indicators .indicator.active img {
+.indicators .indicator.active img{
   transform: scale(1.2); /* تكبير الصورة النشطة */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.indicators .indicator.active .indicator-text{
+font-weight: 600;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.indicators .indicator img:hover {
+.indicators .indicator img:hover,
+.indicators .indicator .indicator-text:hover  {
   transform: scale(1.1); /* تكبير عند تمرير الفأرة */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* حركة سلسة */
 }
 
 .indicators li {
@@ -387,6 +398,37 @@ pointer-events: none;
 
 
 
+
+
+
+
+
+
+
+
+
+
+.image-project-left img {
+  max-width: 100%;
+  height: auto; /* لضمان الحفاظ على نسبة الأبعاد */
+  transform: translateX(-8%) translateY(8%);
+}
+
+.center-items{
+  display: flex;
+  flex-direction: column;  /* ترتيب العناصر بشكل عمودي */
+  justify-content: center; /* توسيط العناصر عمودياً */
+}
+
+.backgroundproject{
+  padding: 60px 0 60px 0;
+}
+
+.image-project-right img {
+  max-width: 100%;
+  height: auto; /* لضمان الحفاظ على نسبة الأبعاد */
+  transform: translateX(27%) translateY(8%);
+}
 
 
 
