@@ -4532,8 +4532,11 @@ br {
 }
 
 .read-color{
-  background:  !important;
+  background:#f14964!important;
+}
 
+.green-color{
+  background:#1ee396 !important;
 }
 
 .service-two__content .icon {
