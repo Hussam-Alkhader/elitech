@@ -434,6 +434,11 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 60px 0 60px 0;
 }
 
+.container.backgroundproject-video {
+  max-width: 600px !important;
+  text-align: center;
+}
+
 .image-project-right img {
   max-width: 100%;
   height: auto;
@@ -4968,6 +4973,15 @@ br {
   right: 10px;
   bottom: 30px;
   z-index: 2;
+}
+
+.about__left-item.project .sm-image.project,
+.about-two__left-item.project .sm-image.project {
+  max-width: 600px!important;
+}
+
+.about__left-item.project{
+  margin-top: 50%!important;
 }
 
 .about__left-item .sm-image .video__btn-wrp,
