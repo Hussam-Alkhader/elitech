@@ -215,6 +215,16 @@ h2 {
   background-color: #ebfbff;
 }
 
+.circular-slider-color {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, #daf8ff 0%, rgba(235, 251, 255, 0) 70%); /* تلاشي أكثر */
+  overflow: hidden !important;
+  z-index: -3;
+}
+
 .Carousel-slider.fullwidth {
   height: 500px;
 }
