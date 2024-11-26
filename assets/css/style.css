@@ -522,7 +522,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 .project_filters li a:hover,
 .project_filters li a.selected {
-  color: #7141b1;
+  color: #014E84;
 }
 
 .project_filters li a:after {
@@ -531,7 +531,7 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 0%;
   right: 0px;
   bottom: 0px;
-  background-color: #7141b1;
+  background-color: #014E84;
   content: "";
   display: block;
   border-radius: 1.5px;
