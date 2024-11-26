@@ -2483,6 +2483,71 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   animation-name: slideInDiagonalTop;
 }
 
+
+
+@-webkit-keyframes slideInTriangleTop {
+  0% {
+    -webkit-transform: translate(-10%, 18%);
+    transform: translate(-10%, 18%);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes slideInTriangleTop {
+  0% {
+    -webkit-transform: translate(-10%, 18%);
+    -ms-transform: translate(-10%, 18%);
+    transform: translate(-10%, 18%);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+.slideInTriangleTop {
+  -webkit-animation-name: slideInTriangleTop;
+  animation-name: slideInTriangleTop;
+}
+
+
+@-webkit-keyframes slideInTriangleBottom {
+  0% {
+    -webkit-transform: translate(10%, -20%);
+    transform: translate(10%, -20%);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes slideInTriangleBottom {
+  0% {
+    -webkit-transform: translate(10%, -20%);
+    -ms-transform: translate(10%, -20%);
+    transform: translate(10%, -20%);
+  }
+
+  100% {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+.slideInTriangleBottom {
+  -webkit-animation-name: slideInTriangleBottom;
+  animation-name: slideInTriangleBottom;
+}
+
 @-webkit-keyframes slideInDiagonalBottom {
   0% {
     opacity: 0;
