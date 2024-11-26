@@ -3167,23 +3167,23 @@ input.main-search-input::placeholder {
 }
 
 .btn-home-yellow {
-  --gradient-bg: linear-gradient(to right, #f5bc40, #FFE141) !important;
-  --secondary-color: #f5bc40 !important;
+  --gradient-bg: #ffc341 !important;
+  --secondary-color: #ffc954 !important;
 }
 
 .btn-home-orange {
-  --gradient-bg: linear-gradient(to right, #FF7B41, #FF9E41) !important;
+  --gradient-bg: #ff6e41 !important;
   --secondary-color: #FF9E41 !important;
 }
 
 .btn-home-purple {
-  --gradient-bg: linear-gradient(to right, #7268be, #8A7DEA) !important;
-  --secondary-color: #8A7DEA !important;
+  --gradient-bg: #8a7dea !important;
+  --secondary-color: #8f83e8 !important;
 }
 
 .btn-home-blue {
-  --gradient-bg: linear-gradient(to right, #51adcb, #6DC8E6) !important;
-  --secondary-color: #51adcb !important;
+  --gradient-bg: #22d5ff !important;
+  --secondary-color: #40dcff !important;
 }
 
 .read-more-btn {
