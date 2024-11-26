@@ -428,21 +428,25 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 100%;
   height: auto;
 }
-.image-project-right {
-  transform: translateX(30%) translateY(-5%);
+
+.image-project-right img:nth-child(1) {
+  transform: translateX(20%) translateY(30%);
 }
-
-
-
 .image-project-right img:nth-child(2) {
-  transform: translateX(-10%) translateY(-30%);
+  transform: translateX(0) translateY(-30%);
 }
 
 @media screen and (max-width: 767px) {
   .image-project-left img,
-  .image-project-right img,
-  .image-project-right {
+  .image-project-right img
+  {
     transform: translateX(0) translateY(0);
+  }
+  .image-project-right img:nth-child(1) {
+    transform: translateX(10%) translateY(30%);
+  }
+  .image-project-right img:nth-child(2) {
+    transform: translateX(-10%) translateY(-30%);
   }
 }
 
